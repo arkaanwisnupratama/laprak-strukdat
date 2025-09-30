@@ -27,6 +27,8 @@ int main()
     return 0;
 }
 ```
+> ![Foto](output/Guided1.png)
+
 Jadi di kode itu ada variabel X, Y, W pake tipe integer, sama Z tipe float. Nilai masing-masing diisi X=7, Y=3, dan W=1. Terus dihitung rumus (X+Y)/(Y+W) yang berarti 10/4. Karena dia bagiannya integer, hasilnya jadi 2 bukan 2.5, baru dikonversi ke float. Hasil akhirnya ditampilin ke layar dengan tulisan "Nilai z = 2".
 
 ### Soal 2 Fungsi
@@ -79,6 +81,8 @@ int main()
     return 0;
 }
 ```
+> ![Foto](output/Guided2.png)
+
 Kode di atas itu buat ngitung luas sama keliling persegi panjang. Pertama user disuruh masukin nilai panjang dan lebar. Terus ada dua fungsi: hitungLuas() buat balikin hasil perkalian panjang × lebar, sama hitungKeliling() buat balikin hasil 2 × (panjang + lebar). Hasilnya ditampilin dulu lewat fungsi, lalu dipanggil prosedur tampilkanHasil() yang langsung print panjang, lebar, luas, dan keliling. Jadi program ini nunjukin perbedaan antara fungsi (ngembaliin nilai) sama prosedur (cuma nampilin hasil).
 
 ### Soal 3 Perkondisian
@@ -139,6 +143,8 @@ int main()
     return 0;
 }
 ```
+> ![Foto](output/Guided3.png)
+
 Kode itu sebenernya nyediain tiga contoh program. Bagian pertama ngitung diskon 5% kalau belanja minimal Rp100.000. Bagian kedua hampir sama, tapi ditambah else biar kalau belanja di bawah Rp100.000 diskonnya otomatis Rp0. Bagian ketiga yang aktif, dia minta input angka 1–7 buat nentuin hari. Hasilnya bisa nunjukkin apakah itu hari kerja, hari libur, atau malah kode yang dimasukin salah.
 
 ### Soal 4 Perulangan
@@ -172,6 +178,8 @@ int main()
     return 0;
 }
 ```
+> ![Foto](output/Guided4.png)
+
 Kode itu nunjukin cara pake perulangan. Kalau versi for, dia bakal nge-print tulisan "saya sahroni" sesuai jumlah yang kita masukin. Kalau versi do-while, dia nge-print "bahlil ke-(i+1)" dan jalan terus sampe nyampe batas jumlah input.
 
 ### Soal 5 Struct
@@ -207,6 +215,8 @@ int main() {
     return 0;
 }
 ```
+> ![Foto](output/Guided5.png)
+
 Kode itu bikin struct Mahasiswa yang isinya nama, NIM, sama IPK. Di dalam main, program bikin objek mhs1 terus minta input dari user untuk ngisi data tersebut. Nama dibaca pakai getline biar bisa masukin lebih dari satu kata. Setelah semua data dimasukin, program nampilin hasilnya lagi ke layar. Jadi program ini simpel buat nyimpen dan nampilin data mahasiswa.
 
 ### Soal 6 TEST
@@ -223,6 +233,8 @@ int main()
     return 0;
 }
 ```
+> ![Foto](output/Guided6.png)
+
 Kode itu minta user masukin satu karakter. Inputnya dibaca pakai getchar() lalu disimpan ke variabel ch. Setelah itu program langsung nampilin karakter yang tadi dimasukin. Jadi intinya cuma buat nunjukin cara baca dan tampilkan satu karakter aja.
 
 ## Unguided
@@ -285,14 +297,14 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](output/Output-Unguided-Soal1.png)
+> ![Foto](output/Output-Unguided-Soal1.png)
 
 Kode itu minta user masukin angka dari 0 sampai 100. Kalau angkanya di luar rentang, program langsung keluar dengan pesan error. Di dalamnya ada tiga array string (satuan, belasan, puluhan) buat nyimpen kata-kata angka dalam bahasa Indonesia. Program lalu cek kondisi: kalau 0 ditulis "nol", kalau 100 ditulis "seratus", kalau di bawah 10 pakai array satuan, kalau 10–19 pakai array belasan, sisanya pakai puluhan ditambah satuan kalau bukan kelipatan 10. Jadi hasil akhirnya angka yang kita masukin langsung ditampilkan dalam bentuk tulisan.
 
 ### Soal 2
 
 Buatlah sebuah program yang menerima masukan angka dan mengeluarkan angak tersebut dalam bentuk tulisan. Angka yang diinput user adalah positif mulai dari 0 s.d 100
-> ![Screenshot bagian x](soal/Gambar_Soal2.png)
+> ![Foto](soal/Gambar_Soal2.png)
 
 ```cpp
 #include <iostream>
@@ -324,7 +336,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](output/Output-Unguided-Soal2.png)
+> ![Foto](output/Output-Unguided-Soal2.png)
 
 Kode itu bikin program kalkulator sederhana. User diminta masukin dua bilangan, lalu program langsung nampilin hasil penjumlahan, pengurangan, dan perkalian. Untuk pembagian, dicek dulu apakah bilangan kedua nol atau tidak. Kalau bukan nol, hasil bagi ditampilkan, kalau nol muncul pesan error. Jadi program ini simpel buat nunjukin operasi dasar aritmatika.
 
@@ -376,7 +388,7 @@ int main() {
 ```
 
 > Output
-> ![Screenshot bagian x](output/Output-Unguided-Soal3.png)
+> ![Foto](output/Output-Unguided-Soal3.png)
 
 Oke, jadi gini. Program itu punya fungsi buatPiramidaTerbalikBintang(int n) buat nge-print pola. Perulangan for (int i = n; i >= 1; i--) ngatur jumlah baris dari n turun ke 1. Di tiap baris, ada loop pertama buat bikin spasi biar rapi, terus loop kedua nge-print angka mundur dari i ke 1. Setelah itu ditaruh simbol *, lalu loop ketiga nge-print angka maju dari 1 sampai i. Jadi pola yang kebentuk itu kaya piramida terbalik.
 
