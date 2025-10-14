@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 2<br>Singly Linked List 1</h1>
+# <h1 align="center">Laporan Praktikum Modul 4<br>Singly Linked List 1</h1>
 <p align="center">Arkaan Wisnu Pratama - 103112430118</p>
 
 ## Dasar Teori
